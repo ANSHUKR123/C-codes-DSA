@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+ int main(){
+    double num,den,result;
+    cout<< "enter the numerator and denominator resp. ";
+    cin>>num>>den;
+   try
+   {
+    if (den==0)
+    {
+       throw den;
+    }
+    
+  
+       result=num/den;
+  
+   }
+   catch(double ex)
+   {
+    cout<<"division by zero lavde!"<<endl;
+   }
+       cout<<"the result is "<<result;
+
+
+    return 0;
+ }
