@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+ int main(){
+    int elements, start,end;
+    cout<<"enter the number of elements u want in array:"<<endl;
+    cin>>elements;
+    cout<<"start entering elements"<<endl;
+    int arr[elements];
+    for (int i = 0; i < elements +1; i++)
+    {
+        cin>>arr[i];
+    }
+    cout<<"the index from to where you want"<<endl;
+    cout<<"start:"<<endl;
+    cin>>start;
+    cout<<"end:"<<endl;
+    cin>>end;
+    cout<<"the elements are: "<<endl;
+    for (int i = start; i < end+1; i++)
+    {
+        cout<<arr[i]<<endl;
+    }
+    
+
+    return 0;
+ }
